@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="545.0" prefWidth="1055.0" xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.easydish.easydish.Bag">
+    <VBox prefHeight="545.0" prefWidth="1055.0">
+        <HBox alignment="CENTER" prefHeight="75.0" prefWidth="1055.0">
+            <TextField fx:id="ingredientNameTextField" alignment="CENTER" onAction="#addButton" prefHeight="50.0"
+                       prefWidth="225.0" promptText="Ingredient Name" styleClass="text-input-field">
+                <HBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                </HBox.margin>
+            </TextField>
+            <Button ellipsisString="" mnemonicParsing="false" onAction="#addButton" prefHeight="50.0" prefWidth="50.0"
+                    textOverrun="CLIP">
+                <styleClass>
+                    <String fx:value="sidebar-button"/>
+                    <String fx:value="plus-button"/>
+                </styleClass>
+                <HBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                </HBox.margin>
+            </Button>
+        </HBox>
+        <ScrollPane hbarPolicy="NEVER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="445.0" prefWidth="1055.0">
+            <VBox.margin>
+                <Insets top="25.0"/>
+            </VBox.margin>
+            <FlowPane fx:id="scrollPaneFlowPane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="443.0" prefWidth="1030.0"
+                      translateX="25.0"/>
+        </ScrollPane>
+    </VBox>
+    <Separator layoutY="75.0" maxHeight="1.0" minHeight="1.0" prefHeight="1.0" prefWidth="1055.0"
+               styleClass="separator-horizontal"/>
+</AnchorPane>

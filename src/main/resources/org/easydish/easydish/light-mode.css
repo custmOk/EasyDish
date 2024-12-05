@@ -1,0 +1,296 @@
+@import "light-utility.css";
+
+@font-face {
+    src: url("fonts/ReadexPro-ExtraLight.ttf");
+}
+@font-face {
+    src: url("fonts/ReadexPro-Light.ttf");
+}
+@font-face {
+    src: url("fonts/ReadexPro-Medium.ttf");
+}
+
+
+* {
+    /*
+    -fx-border-color: red;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    */
+}
+
+.title {
+    -fx-font-family: "Readex Pro Medium";
+    -fx-fill: -clr-dark;
+    -fx-text-fill: -clr-dark;
+    -fx-font-size: 75px;
+    -fx-effect: dropshadow(gaussian, rgba(225, 29, 72, 0.15), 25, 0.5, 5, 5);
+}
+
+.mainFxmlClass {
+    -fx-background-color: -clr-light;
+}
+
+.transparent {
+    -fx-background-color: transparent;
+}
+
+/* Separators */
+
+.separator .line {
+    -fx-background-color: -clr-dark;
+    -fx-border-color: null;
+}
+.separator-horizontal .line {
+    -fx-pref-height: 3px;
+    -fx-min-height: 3px;
+    -fx-max-height: 3px;
+}
+.separator-vertical .line {
+    -fx-pref-width: 3px;
+    -fx-min-width: 3px;
+    -fx-max-width: 3px;
+}
+
+/* Buttons */
+
+.sidebar-button-container {
+    -fx-alignment: center;
+}
+
+.sidebar-button {
+    -fx-pref-height: 50px;
+    -fx-pref-width: 50px;
+    -fx-border-radius: 10px;
+    -fx-background-size: 50px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+    -fx-text-fill: -clr-dark;
+
+    transition: -fx-background-color .25s ease-in-out;
+}
+.sidebar-button:hover {
+    -fx-background-color: -clr-rose;
+}
+.sidebar-button:selected {
+     -fx-background-color: -clr-rose;
+ }
+.search-button {
+    -fx-background-image: url('images/dark/Search.png');
+}
+.bag-button {
+    -fx-background-image: url('images/dark/Bag.png');
+}
+.recipe-button {
+    -fx-background-image: url('images/dark/Book.png');
+}
+.calendar-button {
+    -fx-background-image: url('images/dark/Calendar.png');
+}
+.settings-button {
+    -fx-background-image: url('images/dark/Settings.png');
+}
+.plus-button {
+    -fx-background-image: url('images/dark/Plus.png');
+}
+.minus-button {
+    -fx-background-image: url('images/dark/Minus.png');
+}
+.refresh-button {
+    -fx-background-image: url('images/dark/Refresh.png');
+}
+.x-button {
+    -fx-background-image: url('images/dark/X.png');
+}
+.save-button {
+    -fx-background-image: url('images/dark/Save.png');
+}
+
+/* Scroll Bars */
+
+.scroll-pane, .scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+.scroll-pane .scroll-bar:vertical {
+    -fx-padding: 0;
+}
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 10px;
+}
+.scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-border-color: -clr-dark;
+    -fx-background-radius: 0;
+    -fx-border-radius: 2em;
+}
+.scroll-bar:vertical .decrement-button, .scroll-bar:vertical .increment-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-padding: 0 10 0 0;
+}
+.scroll-bar .decrement-arrow, .scroll-bar .increment-arrow {
+    -fx-shape: " ";
+    -fx-padding: 0 0.15em;
+}
+.scroll-bar:vertical .thumb {
+    -fx-background-color: -clr-dark;
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+
+    transition: -fx-background-color .25s ease-in-out;
+}
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: -clr-rose;
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}
+
+/* Recipe Info */
+
+.recipe-heading-text-recipe-title {
+    -fx-text-fill: -clr-dark;
+    -fx-font-family: "Readex Pro Medium";
+    -fx-font-size: 18px;
+    -fx-alignment: center-left;
+}
+.recipe-heading-text {
+    -fx-text-fill: -clr-dark;
+    -fx-font-family: "Readex Pro Medium";
+    -fx-font-size: 18px;
+    -fx-alignment: center;
+}
+.recipe-text {
+    -fx-text-fill: -clr-dark;
+    -fx-font-family: "Readex Pro Medium";
+    -fx-font-size: 20px;
+    -fx-alignment: center;
+}
+.recipe-text-name {
+    -fx-text-fill: -clr-dark;
+    -fx-font-family: "Readex Pro Medium";
+    -fx-font-size: 25px;
+}
+.recipe-image {
+    -fx-border-color: -clr-dark;
+    -fx-border-width: 2px;
+    -fx-border-radius: 15px;
+}
+
+/* Saved Tabs */
+
+.text-input-field {
+    -fx-background-color: transparent;
+    -fx-font-family: "Readex Pro Light";
+    -fx-text-fill: -clr-dark;
+    -fx-font-size: 16px;
+    -fx-border-style: solid;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+    -fx-border-color: -clr-dark;
+}
+.saved-content {
+    -fx-background-color: transparent;
+    -fx-border-color: -clr-dark;
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-border-radius: 15px;
+}
+.saved-text {
+    -fx-text-fill: -clr-dark;
+    -fx-font-family: "Readex Pro Light";
+    -fx-font-size: 14px;
+    -fx-alignment: center;
+}
+
+/* Recipe Display */
+.recipe-display-text {
+    -fx-text-fill: -clr-dark;
+    -fx-font-family: "Readex Pro Medium";
+    -fx-font-size: 30px;
+    -fx-alignment: center;
+}
+.recipe-display-info-text {
+    -fx-text-fill: -clr-dark;
+    -fx-font-family: "Readex Pro Medium";
+    -fx-font-size: 20px;
+    -fx-alignment: center-left;
+}
+.recipe-display-instructions-title {
+    -fx-text-fill: -clr-dark;
+    -fx-font-family: "Readex Pro Medium";
+    -fx-font-size: 20px;
+    -fx-alignment: center;
+}
+.recipe-display-instructions-text {
+    -fx-fill: -clr-dark;
+    -fx-font-family: "Readex Pro Light";
+    -fx-font-size: 14px;
+    -fx-alignment: center;
+}
+.recipe-display-container {
+    -fx-border-radius: 7px;
+    -fx-border-color: -clr-dark;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+}
+.recipe-display-important {
+    -fx-fill: -clr-rose;
+    -fx-font-family: "Readex Pro Medium";
+    -fx-font-size: 14px;
+    -fx-alignment: center;
+}
+
+/* Settings */
+.settings-title {
+    -fx-text-fill: -clr-dark;
+    -fx-font-family: "Readex Pro Medium";
+    -fx-font-size: 30px;
+    -fx-alignment: center;
+}
+.settings-content-minor {
+    -fx-text-fill: -clr-dark;
+    -fx-font-family: "Readex Pro Light";
+    -fx-font-size: 20px;
+    -fx-alignment: center;
+}
+.settings-content {
+    -fx-text-fill: -clr-dark;
+    -fx-font-family: "Readex Pro Medium";
+    -fx-font-size: 20px;
+}
+.settings-content-field {
+    -fx-text-fill: -clr-light;
+    -fx-font-family: "Readex Pro Medium";
+    -fx-font-size: 20px;
+    -fx-alignment: center;
+}
+.settings-tab-button {
+    -fx-border-radius: 10px;
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+
+    transition: -fx-background-color .25s ease-in-out;
+}
+.settings-tab-button:hover {
+    -fx-background-color: -clr-rose;
+}
+.settings-tab-button:selected {
+    -fx-background-color: -clr-rose;
+}
+.slider:horizontal .thumb {
+    -fx-background-color: -clr-dark;
+
+    transition: -fx-background-color .25s ease-in-out;
+}
+.slider:horizontal .thumb:hover {
+    -fx-background-color: -clr-rose;
+}
+.slider:horizontal .track {
+    -fx-background-color: transparent;
+    -fx-border-color: -clr-dark;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
