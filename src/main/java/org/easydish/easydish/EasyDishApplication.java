@@ -30,7 +30,7 @@ public class EasyDishApplication extends Application
     private static final String SAVED_RECIPES_FILE = "src/main/java/org/easydish/easydish/saved-recipes.json";
     private static final String SAVED_INGREDIENTS_FILE = "src/main/java/org/easydish/easydish/saved-ingredients.json";
     private static final String SAVED_SETTINGS_FILE = "src/main/java/org/easydish/easydish/saved-settings.json";
-    private static final String API_KEY = "946226982e2342a59685c91c28bad433";
+    private static final String API_KEY = "946226982e2342a59685c91c28bad433"; //it's a free version if your trying to steal it 💀
     private static final String BASE_URL = "https://api.spoonacular.com";
     static int generatedRecipeAmount = 1;
     private static final Set<Recipe> recommendedRecipes = new TreeSet<>();
